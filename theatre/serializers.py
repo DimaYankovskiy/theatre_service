@@ -41,12 +41,12 @@ class PlayListSerializer(PlaySerializer):
     actors = serializers.SlugRelatedField(
         many=True,
         read_only=True,
-        slug_field='full_name'
+        slug_field="full_name"
     )
     genres = serializers.SlugRelatedField(
         many=True,
         read_only=True,
-        slug_field='name'
+        slug_field="name"
     )
 
     class Meta:
