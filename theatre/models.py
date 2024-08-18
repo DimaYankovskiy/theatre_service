@@ -125,3 +125,6 @@ class Reservation(models.Model):
 
     def __str__(self) -> str:
         return str(self.created_at)
+
+    class Meta:
+        ordering = ["-created_at"]
